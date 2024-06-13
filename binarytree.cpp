@@ -8,4 +8,11 @@ class node
     string info;
     node* leftchild;
     node* rightchild;
-}
+
+    node(string i, node* l, node* r)
+    {
+        info=i;
+        leftchild=l;
+        rightchild=r;
+    }
+};
