@@ -19,5 +19,5 @@ class node
 
 class binarytree
 {
-    
+    public:
 }
