@@ -59,5 +59,12 @@ class BinaryTree
         currentNode = ROOT;
         parent = NULL;
         while ((currentNode != NULL) && (currentNode->info != element))
+        {
+            parent = currentNode;
+            if(element < currentNode->info)
+               currentNode = currentNode->leftchild;
+            else
+               currentNode = currentNode->rightchild;
+        }
     }
 }
