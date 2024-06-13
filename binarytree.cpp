@@ -91,12 +91,12 @@ class BinaryTree
         }
         if (ptr != NULL)
         {
-            preorder(ptr->leftchild);
             cout << ptr->info << " ";
+            preorder(ptr->leftchild);
             preorder(ptr->rightchild);
         }
     }
-    void posorder(Node* ptr)
+    void postorder(Node* ptr)
     {
         if (ROOT == NULL)
         {
@@ -105,9 +105,9 @@ class BinaryTree
         }
         if (ptr != NULL)
         {
-            posorder(ptr->leftchild);
+            postorder(ptr->leftchild);
+            postorder(ptr->rightchild);
             cout << ptr->info << " ";
-            posorder(ptr->rightchild);
         }
     }
 }
