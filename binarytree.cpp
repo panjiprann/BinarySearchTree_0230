@@ -96,4 +96,18 @@ class BinaryTree
             preorder(ptr->rightchild);
         }
     }
+    void posorder(Node* ptr)
+    {
+        if (ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != NULL)
+        {
+            posorder(ptr->leftchild);
+            cout << ptr->info << " ";
+            posorder(ptr->rightchild);
+        }
+    }
 }
