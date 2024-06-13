@@ -16,3 +16,8 @@ class node
         rightchild=r;
     }
 };
+
+class binarytree
+{
+    
+}
