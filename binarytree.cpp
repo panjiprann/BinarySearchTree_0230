@@ -70,6 +70,30 @@ class BinaryTree
 
     void inorder(Node* ptr)
     {
-        
+        if (ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != NULL)
+        {
+            inorder(ptr->leftchild);
+            cout << ptr->info << " ";
+            inorder(ptr->rightchild);
+        }
+    }
+    void preorder(Node* ptr)
+    {
+        if (ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != NULL)
+        {
+            preorder(ptr->leftchild);
+            cout << ptr->info << " ";
+            preorder(ptr->rightchild);
+        }
     }
 }
